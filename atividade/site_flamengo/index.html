@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLAcademy</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <header>
+            <h1 class="titulo">Bem-vindo a Escola Flamengo</h1>
+    </header>
+
+    <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#localizacao">Localização</a>
+        <a href="#objetivos">Objetivos</a>
+        <a href="#categoria">Categorias</a>
+        <a href="#inscreva-se">Inscreva-se</a>
+
+    </nav>
+
+    <main>
+        <article>
+            <section id="sobre">
+                <h2>Sobre a Escola</h1>
+                <p class="text">
+                    Na nossa escola de futebol, acreditamos que o esporte vai muito além das quatro linhas. Aqui, formamos atletas e cidadãos, desenvolvendo não apenas o talento com a bola nos pés, mas também valores como respeito, disciplina, trabalho em equipe e dedicação.
+                    Com uma equipe de treinadores qualificados, metodologia moderna e turmas divididas por faixa etária, oferecemos um ambiente seguro, acolhedor e motivador para que cada aluno evolua no seu ritmo.
+                    Seja para quem sonha em seguir carreira no futebol ou para quem busca saúde, amizade e diversão, nossa escola é o lugar certo para crescer dentro e fora de campo.
+                </p>
+                <picture>
+                    <img class="foto" src="img/acao.jpg" alt="">
+                </picture>
+            </section>
+
+            <section id="localizacao">
+                <h2>Localização</h2>
+                <p>
+                    Rua dos Campeões, 1250 - Bairro Vila Vitória, São Bernardo do Campo - RJ <br>
+                    (Próximo ao Parque Central, com fácil acesso pela Av. dos Esportes)
+                </p>
+            </section>
+
+            <section id="objetivos">
+                <h2>Objetivos da Nossa Escola de Futebol</h2>
+                <ul class="objetivo">
+                    <li>Desenvolver habilidades técnicas, físicas e táticas dos alunos de forma progressiva.</li>
+                    <br>
+                    <li>Ensinar valores fundamentais como respeito, disciplina, cooperação e responsabilidade.</li>
+                    <br>
+                    <li>Estimular a prática esportiva como ferramenta de saúde, bem-estar e inclusão social.</li>
+                    <br>
+                    <li>Identificar e potencializar talentos para oportunidades em clubes e competições.</li>
+                    <br>
+                    <li>Promover um ambiente seguro, acolhedor e educativo para crianças e adolescentes.</li>
+                    <br>
+                    <li>Incentivar o espírito de equipe e o fair play dentro e fora de campo.</li>
+                    <br>
+                    <li>Trabalhar a autoestima e a confiança dos alunos por meio de metas e conquistas pessoais.</li>
+                    <br>
+                    <li>Oferecer acompanhamento individualizado, respeitando o ritmo e o perfil de cada aluno.</li>
+                </ul>
+            </section>
+
+            <section id="categoria">
+                <h2>Categorias</h1>
+                <ul>
+                <h3 class="sub">Sub-5 / Sub-6 / Sub-7</h3>
+                    <ul>
+                        <li>Idade: 4 a 6 anos</li>
+                        <li>Foco: Iniciação esportiva, coordenação motora, noções básicas do jogo.</li>
+                    </ul>
+
+                <h3 class="sub">Sub-8 / Sub-9</h3>
+                    <ul>
+                        <li>Idade: 7 a 8 anos</li>
+                        <li>Foco: Desenvolvimento técnico inicial, introdução tática, trabalho em equipe.</li>
+                    </ul>
+
+                <h3 class="sub">Sub-10 / Sub-11</h3>
+                    <ul>
+                        <li>Idade: 9 a 10 anos</li>
+                        <li>Foco: Aperfeiçoamento técnico, fundamentos táticos simples, jogos reduzidos.</li>
+                    </ul>
+                
+                <h3 class="sub">Sub-12 / Sub-13</h3>
+                    <ul>
+                        <li>Idade: 11 a 12 anos</li>
+                        <li>Foco: Técnicas mais avançadas, posicionamento, tomada de decisão.</li>
+                    </ul>
+                
+                <h3 class="sub">Sub-14 / Sub-15</h3>
+                    <ul>
+                        <li>Idade: 13 a 14 anos</li>
+                        <li>Foco: Alto nível técnico, tática, preparação física mais intensa.</li>
+                    </ul>
+
+                <h3 class="sub">Sub-16 / Sub-17 / Sub-18</h3>
+                    <ul>
+                        <li>Idade: 15 a 17 anos</li>
+                        <li>Foco: Treinamento de alto rendimento, foco competitivo, transição para o futebol profissional/amador.</li>
+                    </ul>
+                </ul>
+            </section>
+
+            <section class="formulario">
+                    <h2 id="inscreva-se">Inscreva-se</h2>
+                    <ul>
+                        <h3>Informações do Aluno</h3>
+                        <form action="/enviar" method="post">
+                            <label for="nome-aluno">Nome Aluno:</label>
+                            <input type="text" id="nome-aluno" name="nome-aluno" placeholder="Digite seu nome completo" required />
+                            <br /><br />
+                        
+                            <label for="data_nascimento">Data de Nascimento:</label>
+                            <input type="date" id="data_nascimento" name="data_nascimento" required />
+                            <br /><br />
+
+                            <label for="genero">Gênero:</label>
+                            <select name="genero" id="genero">
+                                <option value="masculino">Masculino</option>
+                                <option value="feminino">Feminino</option>
+                            </select>
+                            <br /><br />
+                            
+                            
+                            <label for="categoria">Categoria:</label>
+                            <input type="text" id="categoria" name="categoria" placeholder="Sub-6, Sub-9,Sub-17" required />
+                            <br /><br />
+
+                            <h3>Informações do Responsável</h3>
+
+                            <label for="nome-resp">Nome Responsável:</label>
+                            <input type="text" id="nome-resp" name="nome-resp" placeholder="Digite seu nome completo" required />
+                            <br /><br />
+
+
+                            <label for="telefone">Telefone:</label>
+                            <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX" pattern="\(\d{2}\) \d{5}-\d{4}" required />
+                            <br /><br />
+
+                            <label for="email">E-mail:</label>
+                            <input type="email" id="email" name="email" placeholder="exemplo@dominio.com" required />
+                            <br /><br />
+                            
+                            <h3>Autorização</h3>
+                            <label>
+                                <input type="checkbox" name="termos" required /> Autorizo a participação do aluno nas atividades da escola
+                                <br>
+                                <input type="checkbox" name="termos" required /> Autorizo o uso de imagem em fotos e vídeos
+                            </label>
+                            <br /><br />
+
+                        
+                            <button type="submit">Enviar Inscrição</button>
+
+
+                        </form>
+                    </ul>
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy;2025 Todos os direitos reservados</p>
+    </footer>
+</body>
+</html>
