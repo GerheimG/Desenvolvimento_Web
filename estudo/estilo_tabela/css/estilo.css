@@ -1,0 +1,43 @@
+* {
+    font-family: Roboto;
+}
+
+body {
+    font-family: Roboto;
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 20px;
+}
+
+/*Estilo da tabela*/
+table {
+    width: 80%; 
+    margin: 20px auto; /*Centraliza a tabela*/
+    border-collapse: collapse; /*Remove o espaçamento das bordas das células*/
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/*Define estilo das células da tabela (cabeçalho e corpo)*/
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+/*Estilo do cabeçalho da tabela*/
+th {
+    background-color: deepskyblue;
+    color: white;
+}
+
+/*Alterna a cor de fundo das linhas*/
+tr:nth-child(even) {
+    background-color: rgb(173, 173, 173);
+}
+
+/*Cor de fundo muda quando passa o mouse*/
+tr:hover {
+    background-color: #ddd;
+}

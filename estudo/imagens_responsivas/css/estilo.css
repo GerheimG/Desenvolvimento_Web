@@ -1,0 +1,39 @@
+/*definindo estilo geral*/
+body {
+    font-family: Roboto;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+/*container que envolve a img*/
+.container {
+    text-align: center;
+    width: 80%;
+    max-width: 1000px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+p {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+img {
+    max-width: 100%; /*nao ultrapasssa o container*/
+    height: auto; /*altura ajusta auto*/
+    display: block; /*evita espaços abaixo*/
+    margin: 0 auto;
+}

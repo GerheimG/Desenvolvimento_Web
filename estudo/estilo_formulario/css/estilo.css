@@ -1,0 +1,62 @@
+body {
+    font-family: Roboto;
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 20px;
+}
+
+/*estilo do container*/
+.formulario-container {
+    width: 50%;
+    margin: auto;
+    background: whitesmoke;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 6px;
+}
+
+/*estilo do rotulo de input*/
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    text-align: left;
+}
+
+/*estilo campo de entrada*/
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 95%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/*estilo dos botões*/
+.grupo-radio, .grupo-checkbox {
+    text-align: left;
+    margin-top: 5px;
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    line-height: 2px;
+}
+
+/*estilo botao de envio*/
+button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    background-color: green;
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(2, 180, 2);
+}
