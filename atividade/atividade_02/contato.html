@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Entre em Contato</title>
+    <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
         <nav class="menu-simples">
@@ -14,12 +15,14 @@
                 <li><a href="clientes.html">Clientes</a></li>
             </ul>
         </nav>
-    <header>
-        <h1>Formulário de contato</h1>
-        <p>Por favor, deixe seu nome, e-mail e uma mensagem. Responderemos o mais rápido possível.</p>
+    <header class="contato-img">
+        <div class="conteudo-principal">
+        <h1 class="titulo">Formulário de contato</h1>
+        <p class="texto">Por favor, deixe seu nome, e-mail e uma mensagem. Responderemos o mais rápido possível.</p>
+        </div>
     </header>
 
-    <form action="/enviar" method="post">
+    <form class="formulario-container" action="/enviar" method="post">
         <!--Campo para nome com validação obrigatória-->
         <label for="nome">Nome Completo:</label>
         <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required />
