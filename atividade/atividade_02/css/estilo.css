@@ -6,6 +6,68 @@
     padding: 0 auto;
 }
 
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    text-align: left;
+}
+
+/*estilo campo de entrada*/
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 95%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    background-color: green;
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(2, 180, 2);
+}
+
+h3 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: auto;
+    padding-top: auto;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+    color: #e7e5e5;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+li {
+    list-style-type: none;
+}
+
+
 .conteudo-principal {
     text-align: center;
     padding: 20px;
@@ -13,9 +75,19 @@
 }
 
 
+img {
+    width: 80%;
+    max-width: 1000px;
+    padding: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
 .principal {
     /*URL da imagem de fundo*/
-    background-image: url(/atividade/atividade_02/img/banner.jpg);
+    background-image: url(../img/banner.jpg);
     /*Faz a imagem cobrir todo o container*/
     background-size: cover;
     background-position: center;
@@ -31,7 +103,7 @@
 
 .portfolio {
     /*URL da imagem de fundo*/
-    background-image: url(/atividade/atividade_02/img/portfolio.jpg);
+    background-image: url(../img/portfolio.jpg);
     /*Faz a imagem cobrir todo o container*/
     background-size: cover;
     background-position: center;
@@ -44,14 +116,6 @@
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.9);
 }
 
-img {
-    width: 80%;
-    max-width: 1000px;
-    padding: 20px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
 
 .menu-simples {
     position: fixed;
@@ -90,13 +154,11 @@ img {
     text-align: center
 }
 
-.erro {
-    padding-top: 40px;
-}
+
 
 .cliente-img {
     /*URL da imagem de fundo*/
-    background-image: url(/atividade/atividade_02/img/cliente.jpg);
+    background-image: url(../img/cliente.jpg);
     /*Faz a imagem cobrir todo o container*/
     background-size: cover;
     background-position: center;
@@ -112,7 +174,7 @@ img {
 
 .contato-img {
     /*URL da imagem de fundo*/
-    background-image: url(/atividade/atividade_02/img/contato.jpg);
+    background-image: url(../img/contato.jpg);
     /*Faz a imagem cobrir todo o container*/
     background-size: cover;
     background-position: center;
@@ -170,32 +232,6 @@ img {
     background-color: #b4b4b4;
 }
 
-h3 {
-    text-align: center;
-}
-
-h2 {
-    text-align: center;
-    font-size: 2rem;
-    margin-top: auto;
-    padding-top: auto;
-}
-
-h1 {
-    text-align: center;
-    padding: 20px;
-    color: #e7e5e5;
-}
-
-p {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
-
-li {
-    list-style-type: none;
-}
 
 .formulario-container {
     width: 100%;
@@ -204,38 +240,4 @@ li {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     border-radius: 0px;
     padding: 20px;
-}
-
-label {
-    display: block;
-    margin-top: 10px;
-    font-weight: bold;
-    text-align: left;
-}
-
-/*estilo campo de entrada*/
-input[type="text"],
-input[type="email"],
-select,
-textarea {
-    width: 95%;
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-button {
-    margin-top: 15px;
-    padding: 10px 20px;
-    border: none;
-    background-color: green;
-    color: white;
-    font-size: 16px;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: rgb(2, 180, 2);
 }
