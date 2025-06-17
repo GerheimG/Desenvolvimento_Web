@@ -1,0 +1,38 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.caixa {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    border-radius: 10px;
+
+    /*propriedades da animação*/
+    animation: moverEColorir 4s ease-in-out infinite alternate;
+    /*timing function: ease-in-out(suaviza início e fim)*/
+    /*infinite (repete infinitamente)*/
+    /*direção: alternate (vai e volta)*/
+    }
+    /*Definição dos keyframe*/
+    @keyframes moverEColorir {
+        /*Estado inicial (0% do tempo da animation)*/
+        0% {
+            transform: trasnlatey(0);
+            background-color: #3498db;
+        }
+
+        50% {
+            transform: translateY(-100px);
+            background-color: #e74c3c;
+        }
+
+        100% {
+            transform: translateY(0);
+            background-color: #2ecc71;
+        }
+    }
