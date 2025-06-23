@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+    font-family: 'roboto';
+    font-weight: bold;
+}
+
+/*
+ * Estilos do corpo da página
+ * Usa flexbox com direção em coluna
+ * Garante que o body ocupe pelo menos toda a altura da viewport
+*/
+body {
+    display: flex; /*Ativa o flexbox*/
+    min-height: 100vh; /* 100% da altura da viewport */
+    flex-direction: column; /* Organiza os filhos verticalmente */
+    margin: 0; /* Remove margens padrão */
+}
+
+
+/*
+ * Container principal (main)
+ * Também usa flexbox para organizar seus filhos
+ * flex: 1 faz com que ocupe todo o espaço disponível entre header e footer
+*/
+main {
+    display: flex;
+    flex: 1;
+}
+
+/*
+ * Estilos para o artigo principal
+ * flex: 1 faz com que ocupe todo o espaço restante
+ * order: 1 define que será o primeiro item da ordem visual
+*/
+main > article {
+    flex: 1; /* Ocupa todo o espaço disponível */
+    order: 1; /* Ordem de exibição (1° Lugar) */
+}
+
+/*
+ * Estilos compartilhados para nav e aside
+ * flex: 0 0 20vw - não cresce, não encolher, largura fixa de 20vw
+*/
+main > nav,
+main > aside {
+    flex: 0 0 20vw; /* Largura fixa de 20% da viewport */
+}
+
+
+/*
+ * Estilos específicos para a navegação (nav)
+ * order : 3 define que será o terceiro item na ordem visual
+*/
+main > nav {
+    background: #d7e8d4;
+    order: 3; /* Ordem de exibição (3° lugar) */
+}
+
+/*
+ * Estilos específicos para o aside (barra lateral)
+ * order: 2 define que será o segundo item na ordem visual
+*/
+main > aside {
+    background: beige;
+    order: 2;
+}
+
+/*
+ * Estilos compartilhados para header e footer
+ * altura fixa de 20vh (20% da altura do viewport)
+ * mesma cor de fundo para ambos
+*/
+
+header,
+footer {
+    background: gray;
+    height: 20vh;
+}
+
+/*
+ * Estilos de padding para todos os elementos estruturais
+ * Aplica 1em de padding em todos os lados
+*/
+header,
+footer,
+article,
+nav,
+aside {
+    padding: 1em;
+}
