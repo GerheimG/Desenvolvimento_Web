@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh; /* Garante que o body ocupe pelo menos toda a altura da tela */
+    display: flex; /* Ativa flexbox no body */
+    flex-direction: column; /* Organiza os filtros em coluna (header, main, footer) */
+}
+
+header, nav, main, section, aside, footer {
+    padding: 20px;
+    border: 1px solid #f7e7a1; /* Borda tracejada para visualização */
+}
+
+.banner {
+    background-image: url(../img/banner.png);
+    background-size: cover;
+    background-position: center;
+    /*Garante que o header ocupe 100% da largura da tela*/
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.9);
+    color: #e7e5e5;
+}
+
+.navegacao {
+    background-color: #2e2815;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.navegacao a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    text-align: center;
+    transition: backround-color 0.3s;
+}
+
+.navegacao a:hover {
+    background-color: #ecad5a;
+}
+
+
+.conteudo-principal {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+}
+
+
+.area-conteudo {
+    background-color: #e2e2e2;
+    flex: 3;
+    min-height: 400px;
+}
+
+.barra-lateral {
+    background-color: #e4e4e4;
+    flex: 1;
+}
+
+.barra-lateral h3 {
+    text-align: left;
+}
+
+.rodape {
+    background-color: #5a5a5a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+
+    /* Flexbox para organizar múltiplos elementos no rodapé */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    
+    .conteudo-principal {
+        flex-direction: column;
+    }
+
+    .area-conteudo, .barra-lateral {
+        width: 100%;
+    }
+
+    .navegacao {
+        flex-direction: column;
+    }
+
+    .navegacao a {
+        border-bottom: 1px solid #555;
+    }
+}
+
+
+body > * {
+    padding: 20px;
+}
+
+.banner {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+
+.barra-lateral {
+    border-left: 1px solid #ccc;
+}
+
+
+
+.area-conteudo, .barra-lateral {
+    padding: 20px;
+}
+
+.area-conteudo > h1, h2, h3 {
+    margin-top: 15px;
+    text-align: center;
+    color: #2e2815;
+}
+
+
+.equipe {
+    width: 40%;
+    display: block;
+    margin: 20px auto;
+}
+
+li {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 15px;
+}
+
+
+p {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+form {
+    background-color: #e2e2e2;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    text-align: left;
+}
+
+/*estilo campo de entrada*/
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 95%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    background-color: green;
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(2, 180, 2);
+}
