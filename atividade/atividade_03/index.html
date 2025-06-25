@@ -8,14 +8,15 @@
 </head>
 
 <body>
-    <!-- Estrutura básica que vamos construir -->
-    <header class="banner"></header>
     <nav class="navegacao">
         <a href="#">Home</a>
         <a href="sobre.html">Sobre</a>
         <a href="cliente.html">Clientes</a>
         <a href="contato.html">Contato</a>
     </nav>
+    <!-- Estrutura básica que vamos construir -->
+    <header class="banner"></header>
+
     <main class="conteudo-principal">
         <section class="area-conteudo">
             <h2>Nossos Serviços</h2><br>
@@ -31,12 +32,71 @@
                 <li>Equipe treinada</li>
                 <li>Ambiente limpo e acolhedor</li>
             </ul>
-            
-            <h2>Tabela de Preços</h2>
+                <h2>Tabela de Preços</h2>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Serviços</th>
+                            <th>Porte do Pet</th>
+                            <th>Preço</th>
+                            <th>Observações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Banho</td>
+                            <td rowspan="3">Pequeno</td>
+                            <td>R$ 40,00</td>
+                            <td>Shampoo neutro, secagem com soprador, perfume suave</td>
+                        </tr>
+                        <tr>
+                            <td>Tosa Higiênica</td>
+                            <td>R$ 30,00</td>
+                            <td>Aparação em áreas íntimas, patas e barriga, com lâmina suave</td>
+                        </tr>
+                        <tr>
+                            <td>Tosa Completa</td>
+                            <td>R$ 60,00</td>
+                            <td>Corte padrão da raça, banho incluso, finalização com laço ou gravatinha</td>
+                        </tr>
+                        <tr>
+                            <td>Banho</td>
+                            <td rowspan="3">Médio</td>
+                            <td>R$ 55,00</td>
+                            <td>Shampoo dermatológico, escovação, perfume de longa duração</td>
+                        </tr>
+                        <tr>
+                            <td>Tosa Higiênica</td>
+                            <td>R$ 40,00</td>
+                            <td>Inclui também acabamento nas orelhas e rabo</td>
+                        </tr>
+                        <tr>
+                            <td>Tosa Completa</td>
+                            <td>R$ 75,00</td>
+                            <td>Corte técnico, inclui hidratação leve e escovação especial</td>
+                        </tr>
+                        <tr>
+                            <td>Banho</td>
+                            <td rowspan="3">Grande</td>
+                            <td>R$ 70,00</td>
+                            <td>Shampoo para pelagem densa, escova potente, secagem prolongada</td>
+                        </tr>
+                        <tr>
+                            <td>Tosa Higiênica</td>
+                            <td>R$ 50,00</td>
+                            <td>Necessário mais tempo e paciência, ideal para pets mais calmos</td>
+                        </tr>
+                        <tr>
+                            <td>Tosa Completa</td>
+                            <td>R$ 90,00</td>
+                            <td>Corte personalizado, requer tempo extra, banho incluso com produtos premium</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <h2>Nossa equipe está esperando seu melhor aumigo com muito carinho!</h2>
+                <img class="equipe" src="img/equipe.jpg" alt=""><br>
 
-            <h2>Nossa equipe está esperando seu melhor aumigo com muito carinho!</h2>
-            <img class="equipe" src="img/equipe.jpg" alt="">
-            
         </section>
         <aside class="barra-lateral">
             <h3>Fale com a gente!</h3>
@@ -45,11 +105,26 @@
 
             <h3>Onde estamos</h3>
             <p>Rua dos Pets, 123 - Bairro Animal<br>
+            
+            
+            <h3>Funcionamento</h3>
+            <p>Segunda a Sábado: 9h às 18h <br> Domingo: fechado</p>
+
+            <h3>Cupom</h3>
+            <p>Use o código AMOPET para 5% de desconto na próxima visita!</p>
 
             <h3>Pet do Mês</h3>
             <p>“O Thor ama vir aqui! Já é cliente desde filhote.” <br> — Fernanda S.</p>
-            <img src="img/banho_dog.jpg" width="100%">
-            <p>Esse é o Thor! Cliente desde 2022.</p>
+            <div class="petmes">
+                <p><strong>Esse é o Thor! Cliente desde 2022.</strong></p>
+                <img  src="img/banho_dog.jpg" width="100%">
+            </div>
+            
+            <h3>Nos Siga no Instagram</h3><br>
+            <p>Aponte a câmera para o QRCODE</p>
+            <img class="qrcode" src="img/code.png" alt="">
+
+
         </aside>
     </main>
     <footer class="rodape">

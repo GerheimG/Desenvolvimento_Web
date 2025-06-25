@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto';
     min-height: 100vh; /* Garante que o body ocupe pelo menos toda a altura da tela */
     display: flex; /* Ativa flexbox no body */
     flex-direction: column; /* Organiza os filtros em coluna (header, main, footer) */
@@ -35,12 +35,13 @@ header, nav, main, section, aside, footer {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    gap: 70px;
 }
 
 .navegacao a {
     color: white;
     text-decoration: none;
-    padding: 15px 20px;
+    padding: 5px 10px;
     text-align: center;
     transition: backround-color 0.3s;
 }
@@ -57,14 +58,15 @@ header, nav, main, section, aside, footer {
 }
 
 
+
 .area-conteudo {
-    background-color: #e2e2e2;
+    background-color: #f3f1f1;
     flex: 3;
     min-height: 400px;
 }
 
 .barra-lateral {
-    background-color: #e4e4e4;
+    background-color: #f3f1f1;
     flex: 1;
 }
 
@@ -131,11 +133,7 @@ body > * {
 }
 
 
-.equipe {
-    width: 40%;
-    display: block;
-    margin: 20px auto;
-}
+
 
 li {
     list-style: none;
@@ -186,4 +184,88 @@ button {
 
 button:hover {
     background-color: rgb(2, 180, 2);
+}
+
+
+/*Estilo da tabela*/
+table {
+    width: 80%; 
+    margin: 20px auto; /*Centraliza a tabela*/
+    border-collapse: collapse; /*Remove o espaçamento das bordas das células*/
+    background: #f7e7a1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/*Define estilo das células da tabela (cabeçalho e corpo)*/
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    border: solid 1px #555;
+}
+
+/*Estilo do cabeçalho da tabela*/
+th {
+    background-color: #ecad5a;
+    color: #2e2815;
+}
+
+.petmes {
+    border: 2px solid #ecad5a;
+    background-color: #ecad5a;
+}
+
+.petmes > p {
+    display: flex;
+    justify-content: center;
+    background-color: #ecad5a;
+}
+
+.equipe {
+    width: 40%;
+    display: block;
+    margin: 20px auto;
+    border: solid 3px #2e2815;
+}
+
+.qrcode {
+    width: 70%;
+    display: block;
+    margin: 20px auto;
+    border: solid 3px #2e2815;
+}
+
+#subtitulo {
+    padding: 5px;
+    line-height: 50px;
+    border-radius: 5px;
+    border: solid 3px #2e2815;
+    background-color: #f7e7a1;
+}
+
+.imagem-cliente {
+  width: 500px;
+  height: 500px;
+}
+
+.conteudo-cliente {
+    display: inline-block;
+    background-color: #f3f1f1;
+}
+
+.foto {
+    display: inline-block;
+    margin-left: 200px;
+    text-align: center;
+    padding: 20px;
+
+}
+
+.foto > p {
+    font-style: italic;
+}
+
+.foto > img {
+    border: solid 3px #2e2815;
 }
