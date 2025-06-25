@@ -14,6 +14,86 @@ body {
 header, nav, main, section, aside, footer {
     padding: 20px;
     border: 1px solid #f7e7a1; /* Borda tracejada para visualização */
+    padding: 20px;
+}
+
+body > * {
+    padding: 20px;
+}
+
+li {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 15px;
+}
+
+p {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+form {
+    background-color: #e2e2e2;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    text-align: left;
+}
+
+/*estilo campo de entrada*/
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 95%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    background-color: green;
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(2, 180, 2);
+}
+
+
+/*Estilo da tabela*/
+table {
+    width: 80%; 
+    margin: 20px auto; /*Centraliza a tabela*/
+    border-collapse: collapse; /*Remove o espaçamento das bordas das células*/
+    background: #f7e7a1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/*Define estilo das células da tabela (cabeçalho e corpo)*/
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    border: solid 1px #555;
+}
+
+/*Estilo do cabeçalho da tabela*/
+th {
+    background-color: #ecad5a;
+    color: #2e2815;
 }
 
 .banner {
@@ -107,10 +187,6 @@ header, nav, main, section, aside, footer {
 }
 
 
-body > * {
-    padding: 20px;
-}
-
 .banner {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
@@ -133,83 +209,6 @@ body > * {
 }
 
 
-
-
-li {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    padding-bottom: 15px;
-}
-
-
-p {
-    margin-bottom: 10px;
-    line-height: 1.5;
-}
-
-form {
-    background-color: #e2e2e2;
-}
-
-label {
-    display: block;
-    margin-top: 10px;
-    font-weight: bold;
-    text-align: left;
-}
-
-/*estilo campo de entrada*/
-input[type="text"],
-input[type="email"],
-select,
-textarea {
-    width: 95%;
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-button {
-    margin-top: 15px;
-    padding: 10px 20px;
-    border: none;
-    background-color: green;
-    color: white;
-    font-size: 16px;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: rgb(2, 180, 2);
-}
-
-
-/*Estilo da tabela*/
-table {
-    width: 80%; 
-    margin: 20px auto; /*Centraliza a tabela*/
-    border-collapse: collapse; /*Remove o espaçamento das bordas das células*/
-    background: #f7e7a1;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-/*Define estilo das células da tabela (cabeçalho e corpo)*/
-
-th, td {
-    border: 1px solid #ddd;
-    padding: 10px;
-    text-align: center;
-    border: solid 1px #555;
-}
-
-/*Estilo do cabeçalho da tabela*/
-th {
-    background-color: #ecad5a;
-    color: #2e2815;
-}
 
 .petmes {
     border: 2px solid #ecad5a;
@@ -268,4 +267,9 @@ th {
 
 .foto > img {
     border: solid 3px #2e2815;
+}
+
+
+.area-conteudo > p,li {
+    font-size: 1.2em;
 }
