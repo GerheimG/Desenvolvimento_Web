@@ -249,13 +249,13 @@ th {
 }
 
 .conteudo-cliente {
-    display: inline-block;
     background-color: #f3f1f1;
+    margin: auto;
 }
 
 .foto {
     display: inline-block;
-    margin-left: 200px;
+    margin: auto;
     text-align: center;
     padding: 20px;
 
