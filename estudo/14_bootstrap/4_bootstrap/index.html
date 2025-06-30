@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <title>Bootstrap</title>
+
+</head>
+
+<body>
+    <main class="container">
+        <section>
+
+
+            <h1>Alinhamento Responsivo</h1>
+            <hr>
+
+            <!--Utilização de sufixos para
+            tamanhos de tela: sm, md, lg, xl
+            sm: small
+            md: medium
+            lg: large
+            xl: extra large-->
+
+            <p class="text-sm-end">telas &gt;= 576px</p>
+            <p class="text-md-end">telas &gt;= 768px</p>
+            <p class="text-lg-end">telas &gt;= 992px</p>
+            <p class="text-xl-end">telas &gt;= 1200px</p>
+
+
+            <p class="text-sm-start">Alinhado à esquerda em telas >= 576px</p>
+            <p class="text-md-center">Centralizado em telas >= 760px</p>
+
+            <!--Transformando elementos de bloco em inline: colocar em todos-->
+            <h1>Bloco para inline!</h1>
+            <hr>
+            <h5 class="d-inline">Elemento Bloco</h5>
+            <h5 class="d-inline">Elemento Bloco</h5>
+            <a class="d-inline">Elemento Bloco</a>
+            <a class="d-inline">Elemento Bloco</a>
+            <br>
+            <br>
+
+            <!--Transformando elementos inline para blocos: colocar em todos-->
+            <h1 class="d-block">Inline para bloco!</h1>
+            <hr>
+            <span class="d-block">Este é um elemento inline</span>
+            <span class="d-block">Este é um elemento inline</span>
+            <span class="d-block">Este é um elemento inline</span>
+            <span class="d-block">Este é um elemento inline</span>
+        </section>
+    </main>
+
+    <!--Bootstrap JS (apenas o necessário)-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <!--A linha acima é necessária para o uso desses componentes:
+    Modal - Dropdown - Collapse (como em acordões ou navbars móveis)
+    Tooltip - Popover - Toast
+    -->
+    
+</body>
+
+</html>
