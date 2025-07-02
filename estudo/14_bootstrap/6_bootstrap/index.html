@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <title>Bootstrap</title>
+
+</head>
+
+<body>
+    
+    <main>
+        <section class="container mt-5">
+            <h1 class="p-4 display-3 bg-info text-center text-light">Margem e Espaçamento Interno</h1>
+            <hr>
+            <p class="lead text-center mb-5">Exemplo de uso das classes de margin e padding do Bootstrap para um layout responsivo</p>
+
+            <!--Aplicando Margens-->
+            <article class="mb-4">
+                <h2 class="bg-success text-white p-3 mt-3">Aplicando Margens - Topo (mt-5)</h2>
+                <p class="bg-success text-white p-3 mt-3">Parágrafo para exemplificar a margem à esquerda (ms-4)</p>
+                <h2 class="bg-success text-white p-3 mx-5">Aplicando Margens Horizontais (mx-5)</h2>
+                <h2 class="bg-success text-white p-3 my-3">Aplicando Margens Verticais (my-3)</h2>
+            </article>
+
+            <hr class="my-4">
+
+            <!--Aplicando Padding-->
+            <article>
+                <h2 class="bg-danger text-white p-5">Aplicando Padding - Todos os Lados (p-5)</h2>
+                <p class="bg-danger text-white ps-5 pb-3">Parágrafo com padding à esquerda (ps-5) e padding inferior (pb-3)</p>
+                <h2 class="bg-warning text-dark pt-4 ps3 pb-4">Padding com Variações em X e Y (pt-4, ps-3, pb-4)</h2>
+                <h2 class="bg-primary text-white pb-4">Padding Vertical (pb-4)</h2>
+            </article>
+
+            <hr class="my-4">
+
+            <!-- Controle de Display -->
+             <article class="my-4">
+                <h2 class="bg-info text-white p-3 d-inline-block">Display Inline-Block</h2>
+                <h2 class="bg-info text-white p-3 d-block">Display Block</h2>
+                <h2 class="bg-info text-white p-3">Display Default (Normal)</h2>
+             </article>
+             <!--O título dentro da <article class='d-none d-md-block'>aparece apenas em telas médias e maiores (acima de 760px)-->
+                <article class="d-none d-md-block my-4">
+                    <h2 class="bg-warning text-white p-3">Este título aparece somente em telas médias e maiores (d-md-block)</h2>
+                </article>
+
+                <article class="d-block d-md-none my-4">
+                    <h2 class="bg-warning text-white p-3">Este título aparece somente em telas pequenas (d-md-none)</h2>
+                </article>
+        </section>
+    </main>
+
+    <!--Bootstrap JS (apenas o necessário)-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
