@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu com Dropdown</title>
+
+  <!-- Importa o CSS do Bootstrap 5.3.7 via CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Conteúdo principal centralizado com largura de 75% -->
+  <main class="w-75 mx-auto">
+    <!-- Cabeçalho com título da página -->
+    <section>
+      <h1 class="display-5 p-2">Barra de Navegação com Dropdown</h1>
+      <hr>
+    </section>
+
+    <header>
+      <!-- Navbar (barra de navegação) responsiva -->
+      <nav class="navbar navbar-expand-sm navbar-dark bg-primary p-2">
+        <!-- Logo ou nome da empresa -->
+        <a class="navbar-brand" href="#">EMPRESA X</a>
+
+        <!-- Botão tipo "hambúrguer" para telas pequenas -->
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-target"
+          aria-controls="menu-target" aria-expanded="false" aria-label="Alternar navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Conteúdo colapsável da navbar -->
+        <div class="collapse navbar-collapse" id="menu-target">
+          <!-- Lista de links do menu, alinhada à direita com ms-auto -->
+          <ul class="navbar-nav ms-auto">
+            <!-- Link normal -->
+            <li class="nav-item"><a class="nav-link" href="#">Página inicial</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Produtos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Galeria</a></li>
+
+            <!-- Item com submenu dropdown -->
+            <li class="nav-item dropdown">
+              <!-- Link que ativa o dropdown -->
+              <a class="nav-link dropdown-toggle" href="#" id="dropdownContato" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Contato
+              </a>
+
+              <!-- Submenu com os itens -->
+              <ul class="dropdown-menu bg-primary" aria-labelledby="dropdownContato">
+                <li><a class="dropdown-item text-warning" href="#">Gerência</a></li>
+                <li><a class="dropdown-item" href="#">Administração</a></li>
+                <li><a class="dropdown-item" href="#">RH</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+  </main>
+
+  <!-- JavaScript do Bootstrap (inclui Popper.js) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU6Qzau9qJ1lfAWpNLlhNTKcFHzAVBREh9d1LvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</body>
+
+</html>

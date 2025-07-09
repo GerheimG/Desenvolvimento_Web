@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap - Listas</title>
+  <!-- Importando Bootstrap 5.3.7 via CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <main class="container py-4">
+    
+    <!-- Título principal da página -->
+    <section>
+      <h1 class="display-5 p-2">Trabalhando com listas</h1>
+      <hr>
+    </section>
+
+    <!-- Lista simples com itens padrão -->
+    <section class="mb-4">
+      <h2 class="display-6 text-warning">Lista simples</h2>
+      <ul class="list-group">
+        <li class="list-group-item">Meu item de lista 1</li>
+        <li class="list-group-item active">Meu item de lista 2</li>
+        <li class="list-group-item">Meu item de lista 3</li>
+        <li class="list-group-item">Meu item de lista 4</li>
+      </ul>
+    </section>
+
+    <!-- Lista sem bordas laterais (flush) -->
+    <section class="mb-4">
+      <h2 class="display-6 text-success">Lista com Flush</h2>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Meu item de lista 1</li>
+        <li class="list-group-item">Meu item de lista 2</li>
+        <li class="list-group-item">Meu item de lista 3</li>
+        <li class="list-group-item active">Meu item de lista 4</li>
+      </ul>
+    </section>
+
+    <!-- Lista com links semânticos -->
+    <section class="mb-4">
+      <h2 class="display-6 text-secondary">Lista com Links</h2>
+      <ul class="list-group">
+        <li class="list-group-item">
+          <a class="text-decoration-none d-block" href="#">Meu item de lista 1</a>
+        </li>
+        <li class="list-group-item">
+          <a class="text-decoration-none d-block" href="#">Meu item de lista 2</a>
+        </li>
+        <li class="list-group-item">
+          <a class="text-decoration-none d-block" href="#">Meu item de lista 3</a>
+        </li>
+        <li class="list-group-item active">
+          <a class="text-decoration-none text-white d-block" href="#">Meu item de lista 4</a>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Lista com cores temáticas do Bootstrap -->
+    <section class="mb-4">
+      <h2 class="display-6 text-info">Lista com Cores</h2>
+      <ul class="list-group">
+        <li class="list-group-item list-group-item-primary">Lista primary</li>
+        <li class="list-group-item list-group-item-secondary">Lista secondary</li>
+        <li class="list-group-item list-group-item-success">Lista success</li>
+        <li class="list-group-item list-group-item-info">Lista info</li>
+        <li class="list-group-item list-group-item-warning">Lista warning</li>
+        <li class="list-group-item list-group-item-danger">Lista danger</li>
+        <li class="list-group-item list-group-item-light">Lista light</li>
+        <li class="list-group-item list-group-item-dark text-white">Lista dark</li>
+      </ul>
+    </section>
+
+    <!-- Lista numerada (com numeração automática) -->
+    <section class="mb-4">
+      <h2 class="display-6 text-danger">Lista numerada</h2>
+      <ol class="list-group list-group-numbered">
+        <li class="list-group-item">Papel A4</li>
+        <li class="list-group-item">Transferidor</li>
+        <li class="list-group-item">Borracha</li>
+      </ol>
+    </section>
+
+    <!-- Breadcrumbs (trilhas de navegação) -->
+    <section class="mb-4">
+      <h2 class="display-6 text-dark">Lista com Breadcrumb</h2>
+      <hr>
+
+      <!-- Breadcrumb com um item -->
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item active" aria-current="page">Home</li>
+      </ol>
+
+      <!-- Breadcrumb com dois níveis -->
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Empresa</li>
+      </ol>
+
+      <!-- Breadcrumb com três níveis -->
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Home</a></li>
+        <li class="breadcrumb-item"><a href="#">Usuários</a></li>
+        <li class="breadcrumb-item active" aria-current="page">John Doe</li>
+      </ol>
+    </section>
+
+  </main>
+
+  <!-- Inclusão do JavaScript do Bootstrap (inclui Popper.js) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU6zqua9J1lfW4pNLlNNTkCFHzAVBReH9diLvGRem5+Rg2FzA82GNgS405Q" crossorigin="anonymous">
+  </script>
+</body>
+</html>
