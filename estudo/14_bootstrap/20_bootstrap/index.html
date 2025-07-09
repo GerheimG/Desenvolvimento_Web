@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudo de Cards - Bootstrap</title>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="css/estilo.css">
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+        crossorigin="anonymous">
+</head>
+
+<body>
+
+    <!--Container para o conteúdo-->
+    <main class="container py-4">
+        <!--Cabeçalho do Site-->
+        <header class="mb-5 text-center">
+            <h1 class="fw-bold">Estudo de Cards com Bootstrap</h1>
+        </header>
+
+        <!--Card 1-->
+        <section class="mb-4">
+            <article class="card" style="width: 25rem;">
+                <img src="img/casa1.jpg" class="card-img-top" alt="imagem de exemplo">
+                <section class="card-body">
+                    <h5 class="card-title">Destque do Dia</h5>
+                    <p class="card-text">
+                        Este é um exmeplo de card com imagem, título e botão. Ideal para promover produtos ou notícias.
+                    </p>
+                    <a href="#" class="btn btn-primary">Saiba mais</a>
+                </section>
+            </article>
+        </section>
+
+        <!--Card 2-->
+        <section class="mb-4">
+            <article class="card" style="width: 18rem;">
+                <section class="card-body">
+                    <h5 class="card-title">Curso de Programação</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">Nível Iniciante</h6>
+                    <p class="card-text">
+                        Aprenda lógica, algoritmos e as principais linguagens do mercado com exemplos práticos.
+                    </p>
+                    <a href="#" class="card-link">Ver detalhes</a>
+                    <a href="#" class="card-link">Inscreva-se</a>
+                </section>
+            </article>
+        </section>
+
+        <!--Card 3 com abas-->
+        <section class="card text-center mb-4">
+            <header class="card-header">
+                <ul class="nav nav-tabs card-header-tabs">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active" aria-current="true">Geral</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link disabled" aria-disabled="true">Desativado</a>
+                    </li>
+                </ul>
+            </header>
+            <article class="card-body">
+                <h5 class="card-title">Informações Gerais</h5>
+                <p class="card-text">
+                    Aqui você encontra detalhes iniciais sobre o conteúdo apresentado nesta seção.
+                </p>
+                <a href="#" class="btn btn-primary">Explorar</a>
+            </article>
+        </section>
+
+        <!--Card 4 com Grid (Imagem Vertical)-->
+        <section class="card mb-4" style="max-width: 540px;">
+            <article class="row g-0">
+                <section class="col-md-4">
+                    <img src="img/casa1.jpg" alt="Imagem lateral" class="img-fluid rounded-start">
+                </section>
+                <section class="col-md-8">
+                    <article class="card-body">
+                        <h5 class="card-title">Novidade da Semana</h5>
+                        <p class="card-text">
+                            Conheça nosso novo recurso que facilita a integração entre plataformas e melhora o desempenho.
+                        </p>
+                        <p class="card-text">
+                            <small class="text-body-secondary">Atualizado há 3 minutos</small>
+                        </p>
+                    </article>
+                </section>
+            </article>
+        </section>
+
+        <!--Card 5: Com fundo colorido-->
+        <section class="mb-4">
+            <article class="card text-white bg-success">
+                <section class="card-body">
+                    <h2 class="card-title h5">Dica de Produtividade</h2>
+                    <p class="card-text">
+                        Faça pausas estratégicas durante o dia e aumente seu foco e rendimento nas atividades.
+                    </p>
+                    <button class="btn btn-light">Ler mais</button>
+                </section>
+            </article>
+        </section>
+
+        <!--Card 6: Grupo de Cards-->
+        <section class="card-group mb-4">
+            <article class="card">
+                <img src="img/casa1.jpg" class="card-img-top" alt="Imagem 1" />
+                <section class="card-body">
+                    <h5 class="card-title">Notícia 1</h5>
+                    <p class="card-text">
+                        Projeto de inovação tecnológica é destque em conferência nacional e atrai novos investidores.
+                    </p>
+                    <p class="card-text">
+                        <small class="text-body-secondary">Atualizado há 3 minutos</small>
+                    </p>
+                </section>
+            </article>
+
+            <article class="card">
+                <img src="img/casa1.jpg" alt="Imagem 2" class="card-img-top">
+                <section class="card-body">
+                    <h5 class="card-title">Notícia 2</h5>
+                    <p class="card-text">
+                        Alunos do ensino médio desenvolvem aplicativo para segurança escolar e ganham prêmio.
+                    </p>
+                    <p class="card-text">
+                        <small class="text-body-secondary">Atualizado há 3 minutos</small>
+                    </p>
+                </section>
+            </article>
+
+            <article class="card">
+                <img src="img/casa1.jpg" alt="Imagem 3" class="card-img-top">
+                <section class="card-body">
+                    <h5 class="card-title">Notícia 3</h5>
+                    <p class="card-text">
+                        Nova plataforma online promete revolucionar o acesso ao ensino técnico gratuito no Brasil.
+                    </p>
+                    <p class="card-text">
+                        <small class="text-body-secondary">Atualizado há 3 minutos</small>
+                    </p>
+                </section>
+            </article>
+        </section>
+
+        <!--Rodapé da página-->
+        <footer class="mt-5 text-center text-muted small">
+                &copy;2025 - Estudo de Cards com Bootstrap e Semântica HTML5
+        </footer>
+
+
+        
+    </main>
+
+
+    <!--Javascript-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
