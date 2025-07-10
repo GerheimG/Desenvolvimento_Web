@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudo de GRID com Bootstrap</title>
+ 
+
+    <!--CSS-->
+    <link rel="stylesheet" href="css/estilo.css">
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+        crossorigin="anonymous">
+    
+    <style>
+        .conteudo {
+            background-color: #ffc10733;
+            border: 1px solid #ffc107;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .mostrar-container {
+            background-color: #f8f9fa;
+            padding: 15px;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Container para o conteúdo-->
+    <main class="container my-5">
+        
+        <header>
+            <h1 class="display-4 mb-3">Estudo do Grid com Bootstrap 5</h1>
+            <hr>
+        </header>
+
+        <section>
+            <h2 class="display-6 mt-4">Larguras fixas</h2>
+            <div class="mostrar-container">
+                <div class="row">
+                    <article class="col-3 conteudo">3/12 colunas</article>
+                    <article class="col-3 conteudo">3/12 colunas</article>
+                    <article class="col-6 conteudo">6/12 colunas</article>
+                </div>
+                <div class="row">
+                    <article class="col-9 conteudo">9/12 colunas</article>
+                    <article class="col-3 conteudo">3/12 colunas</article>
+                </div>
+                <div class="row">
+                    <article class="col-12 conteudo">12/12 colunas</article>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="display-6 mt-4">Dividindo a Row igualmente</h2>
+            <div class="mostrar-container">
+                <div class="row">
+                    <article class="col-4 conteudo">4/12 colunas</article>
+                    <article class="col-4 conteudo">4/12 colunas</article>
+                    <article class="col-4 conteudo">4/12 colunas</article>
+                </div>
+                <div class="row">
+                    <article class="col-6 conteudo">6/12 colunas</article>
+                    <article class="col-6 conteudo">6/12 colunas</article>
+                </div>
+                <div class="row">
+                    <article class="col-2 conteudo">2/12 colunas</article>
+                    <article class="col-2 conteudo">2/12 colunas</article>
+                    <article class="col-2 conteudo">2/12 colunas</article>
+                    <article class="col-2 conteudo">2/12 colunas</article>
+                    <article class="col-2 conteudo">2/12 colunas</article>
+                    <article class="col-2 conteudo">2/12 colunas</article>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="display-6 mt-4">Usando Breakpoint</h2>
+            <div class="mostrar-container">
+                <div class="row">
+                    <article class="col-6 conteudo">Coluna 1</article>
+                    <article class="col-6 conteudo">Coluna 2</article>
+                </div>
+                <div class="row">
+                    <article class="col-6 col-sm-3 conteudo">Coluna 3</article>
+                    <article class="col-6 col-sm-9 conteudo">Coluna 4</article>
+                </div>
+                <div class="row">
+                    <article class="col-6 col-sm-9 conteudo">Coluna 5</article>
+                    <article class="col-6 col-sm-3 conteudo">Coluna 6</article>
+                </div>
+                <div class="row">
+                    <article class="col-6 col-lg-6 conteudo">Coluna 7</article>
+                    <article class="col-6 col-lg-6 conteudo">Coluna 8</article>
+                </div>
+                <div class="row">
+                    <article class="col-6 col-xl-3 conteudo">Coluna 9</article>
+                    <article class="col-6 col-xl-9 conteudo">Coluna 10</article>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="display-6 mt-4">Cards Responsivos</h2>
+            <div class="mostrar-conteudo">
+                <header class="conteudo">
+                    <h3 class="display-5 text-center">Banner</h3>
+                </header>
+                <div class="row">
+                    <article class="col-md-6 col-xl-4 conteudo">
+                        <h4>Conteúdo 1</h4>
+                        <p>Lorem ipsum dolor sit amet...</p>
+                        <button class="btn btn-warning">Leia mais</button>
+                    </article>
+                    <article class="col-md-6 col-xl-4 conteudo">
+                        <h4>Conteúdo 2</h4>
+                        <p>Lorem ipsum dolor sit amet...</p>
+                        <button class="btn btn-warning">Leia mais</button>
+                    </article>
+                    <article class="col-md-6 col-xl-4 conteudo">
+                        <h4>Conteúdo 3</h4>
+                        <p>Lorem ipsum dolor sit amet...</p>
+                        <button class="btn btn-warning">Leia mais</button>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="display-6 mt-4">Alinhamentos Verticais e Horizontais</h2>
+            <div class="mostrar-container">
+                <h5>Alinhamento vertical com <code>align-items-center</code></h5>
+                <div class="row align-items-center" style="height: 100px;">
+                    <article class="col conteudo">Item 1</article>
+                    <article class="col conteudo">Item 2</article>
+                    <article class="col conteudo">Item 3</article>
+                </div>
+
+                <h5>Alinhamento vertical individual com <code>align-self-*</code></h5>
+                <div class="row" style="height: 120px;">
+                    <article class="col-4 conteudo align-self-start">Topo</article>
+                    <article class="col-4 conteudo align-self-center">Centro</article>
+                    <article class="col-4 conteudo align-self-end">Base</article>
+                </div>
+
+                <h2 class="display-6 mt-4">Offset e Ordenação</h2>
+                <div class="mostrar-container">
+                    <h5>Offset (espaçamento à esquerda)</h5>
+                    <div class="row">
+                        <article class="col-6 offset-md-4 conteudo">Offset de 4 colunas</article>
+                    </div>
+
+                    <h5>Vários offsets</h5>
+                    <div class="row">
+                        <article class="col-md-5 offset-md-2 conteudo">Espaço 1</article>
+                        <article class="col-md-5 offset-md-2 conteudo">Espaço 2</article>
+                    </div>
+
+                    <h5>Ordenação com <code>order-*</code></h5>
+                    <div class="row">
+                        <article class="col conteudo order-3">Item 1</article>
+                        <article class="col conteudo order-3">Item 2</article>
+                        <article class="col conteudo order-3">Item 3</article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="display-6 mt-4">Rows Aninhadas</h2>
+            <div class="mostrar-container">
+                <div class="row border border-danger p-2">
+                    <div class="col-lg-6 border border-primary p-2">
+                        <div class="row">
+                            <article class="col-sm-3 conteudo">C1</article>
+                            <article class="col-sm-3 conteudo">C2</article>
+                            <article class="col-sm-3 conteudo">C3</article>
+                            <article class="col-sm-3 conteudo">C4</article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--Javascript-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
