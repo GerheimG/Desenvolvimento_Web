@@ -1,24 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FidelCine</title>
 
-    <!--CSS-->
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+
+    <!-- CSS externo -->
     <link rel="stylesheet" href="css/estilo.css" />
+    
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous" />
 
-    <!--Bootstrap-->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
-      crossorigin="anonymous"
-    />
-
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-
-
+    <!-- Estilos internos -->
     <style>
       .carousel-item {
         height: 400px;
@@ -34,81 +29,66 @@
       .carousel-caption {
         background-color: rgba(0, 0, 0, 0.5);
         padding: 10px;
+        text-align: center;
       }
 
       body {
         background-color: black;
         font-family: 'Roboto', sans-serif;
       }
-      p {
-        color: white;
-      }
-      a {
+
+      p, a {
         color: white;
       }
     </style>
   </head>
 
   <body>
-
-
-    <nav class="navbar navbar-expand-sm navbar-dark p-2 mx-auto">
-        <a class="navbar-brand bg-danger text-black px-3 py-1 rounded mx-auto" href="#">
-                    FidelCine
-        </a>
-
-                  <!-- Botão de sanduíche (para telas pequenas) -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-target"
-                aria-controls="menu-target" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-        </button>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-black">
+      <div class="container" style="width: 80%;">
+        <a class="navbar-brand bg-danger text-black px-3 py-1 rounded" href="#">FidelCine</a>
         
-        <div class="collapse navbar-collapse" id="menu-target">
-            <ul class="navbar-nav ms-auto mx-auto">
-                <li class="nav-item"><a class="nav-link" aria-current="page" href="#">Filmes</a></li>
-                <li class="nav-item"><a class="nav-link" aria-current="page" href="#">Sessões</a></li>
-                <li class="nav-item"><a class="nav-link" aria-current="page" href="#">Avaliações</a></li>
-                <li class="nav-item"><a class="nav-link" aria-current="page" href="#">Contato</a></li>
-            </ul>
-        </div>
-    </nav>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-target" aria-controls="menu-target" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <!--Cabeçalho do Site-->
+        <div class="collapse navbar-collapse justify-content-end" id="menu-target">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="filmes.html">Filmes</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Sessões</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Avaliações</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Carrossel -->
     <header>
-      <div id="carouselAvancado" class="carousel slide mx-auto" data-bs-ride="carousel" data-bs-interval="3000" data-bs-pause="hover" style="width: 80%;">
+      <div id="carouselAvancado" class="carousel slide mx-auto" data-bs-ride="carousel" data-bs-interval="3000" data-bs-pause="hover" style="width: 69%;">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselAvancado" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button
-            type="button"
-            data-bs-target="#carouselAvancado"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselAvancado"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
+          <button type="button" data-bs-target="#carouselAvancado" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselAvancado" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
 
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="img/slider1.png" class="d-block w-100 img-fluid" alt="Slide 1" style="height: 100%; width: 100%; object-fit: fill;"/>
+            <img src="img/slider1.png" class="d-block w-100 img-fluid" alt="Slide 1" />
             <div class="carousel-caption d-none d-md-block">
               <h5>SUPERMAN</h5>
               <p>Em meio a heróis, vilões e dilemas modernos, Superman busca equilibrar sua origem kryptoniana e sua humanidade. Um novo épico dirigido por James Gunn.</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="img/slider2.png" class="d-block w-100 img-fluid" alt="Slide 2" style="height: 100%; width: 100%; object-fit: fill;"/>
+            <img src="img/slider2.png" class="d-block w-100 img-fluid" alt="Slide 2" />
             <div class="carousel-caption d-none d-md-block">
-              <h5>Jurassic World <br>O Recomeço</h5>
+              <h5>Jurassic World <br />O Recomeço</h5>
               <p>Em Jurassic World: Recomeço, uma equipe enfrenta perigos extremos para coletar DNA de criaturas colossais e salvar vidas humanas. A natureza é quem dita as regras.</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="img/slider3.png" class="d-block w-100 img-fluid" alt="Slide 3" style="height: 100%; width: 100%; object-fit: fill;">
+            <img src="img/slider3.png" class="d-block w-100 img-fluid" alt="Slide 3" />
             <div class="carousel-caption d-none d-md-block">
               <h5>F1: O Filme</h5>
               <p>Em F1, Brad Pitt vive um piloto lendário que sai da aposentadoria para treinar um novato e tentar levar a fictícia ApexGP à vitória. Um drama eletrizante gravado em meio às corridas reais da F1.</p>
@@ -116,43 +96,172 @@
           </div>
         </div>
 
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselAvancado"
-          data-bs-slide="prev"
-        >
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselAvancado" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Anterior</span>
         </button>
-
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselAvancado"
-          data-bs-slide="next"
-        >
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselAvancado" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Depois</span>
+          <span class="visually-hidden">Próximo</span>
         </button>
       </div>
     </header>
 
-    <!--Container para o conteúdo-->
-    <main>
+        <!-- Conteúdo principal -->
+    <main class="py-5">
+      <div class="container" style="width: 80%;">
+        <h2 class="text-white mb-4 text-center">Em Cartaz</h2>
 
+        <div class="row justify-content-center mb-4">
+          <div class="col-12">
+            <div class="card bg-dark text-white">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="img/card1.png" class="img-fluid rounded-start" alt="Planeta dos Macacos">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Planeta dos Macacos</h5>
+                    <p class="card-text">Will Rodman (James Franco), cientista em San Francisco, testa um remédio para Alzheimer em macacos. 
+                      Após sua pesquisa ser cancelada, ele aplica o medicamento em seu pai (John Lithgow) e cria César, um filhote de macaco 
+                      geneticamente alterado. Enquanto o remédio melhora a memória de seu pai, César desenvolve inteligência avançada. 
+                      Com o tempo, a situação foge do controle, levando César a ser preso e se revoltar junto aos outros símios.</p>
+
+                      <div class="d-flex justify-content-between my-3">
+                        <img src="img/ator1.png" class="img-thumbnail bg-dark border-secondary" style="width: 30%;" alt="James Franco">
+                        <img src="img/ator2.png" class="img-thumbnail bg-dark border-secondary" style="width: 30%;" alt="John Lithgow">
+                        <img src="img/ator3.png" class="img-thumbnail bg-dark border-secondary" style="width: 30%;" alt="Andy Serkis">
+                      </div>
+                    <a href="#" class="btn btn-outline-light btn-sm">Ver mais</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center mb-4">
+          <div class="col-12">
+            <div class="card bg-dark text-white">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="img/card2.png" class="img-fluid rounded-start" alt="Garfield">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Garfield - Fora de Casa</h5>
+                    <p class="card-text">Em Garfield: Fora de Casa, o amado gato de estimação laranja (dublado por Chris Pratt) 
+                      está de volta para mais uma aventura inesquecível: após reencontrar seu pai, o gato de rua Vic (dublado por Samuel L. Jackson), 
+                      que não via há muito tempo, Garfield e o cãozinho Odie acabam se envolvendo em um arriscado assalto.</p>
+                      <div class="d-flex justify-content-between my-3">
+                        <img src="img/ator4.png" class="img-thumbnail bg-dark border-secondary" style="width: 30%;" alt="James Franco">
+                        <img src="img/ator5.png" class="img-thumbnail bg-dark border-secondary" style="width: 30%;" alt="John Lithgow">
+                        <img src="img/ator6.png" class="img-thumbnail bg-dark border-secondary" style="width: 30%;" alt="Andy Serkis">
+                      </div>
+                    <a href="#" class="btn btn-outline-light btn-sm">Ver mais</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-12">
+            <div class="card bg-dark text-white">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="img/card3.png" class="img-fluid rounded-start" alt="Kung Fu Panda">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Kung Fu Panda 4</h5>
+                    <p class="card-text">Po é escolhido como novo Líder Espiritual do Vale da Paz — um papel para o qual não se sente preparado. Antes de assumir, precisa treinar um novo Dragão Guerreiro: Zhen, uma raposa habilidosa, mas resistente à ideia de ser treinada. Enquanto isso, a feiticeira Camaleoa tenta trazer de volta antigos vilões derrotados por Po.</p>
+                      <div class="d-flex justify-content-between my-3">
+                        <img src="img/ator7.png" class="img-thumbnail bg-dark border-secondary" style="width: 30%;" alt="James Franco">
+                        <img src="img/ator8.png" class="img-thumbnail bg-dark border-secondary" style="width: 30%;" alt="John Lithgow">
+                        <img src="img/ator9.png" class="img-thumbnail bg-dark border-secondary" style="width: 30%;" alt="Andy Serkis">
+                      </div>
+                    <a href="#" class="btn btn-outline-light btn-sm">Ver mais</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </main>
 
-    <!--Rodapé da página-->
-    <footer></footer>
 
-    <!--Javascript-->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-      crossorigin="anonymous"
-    ></script>
+    <footer class="bg-dark text-white py-5 mt-5">
+      <div class="container">
+        <div class="row text-center text-md-start">
+          <!-- Marca e descrição -->
+          <div class="col-md-4 mb-4">
+            <h5 class="text-danger">FidelCine</h5>
+            <p class="small">Sua central de cinema com os melhores lançamentos e experiências nas telonas.</p>
 
-    <script src="js/script.js"></script>
+            <!-- WhatsApp -->
+            <a href="https://wa.me/5511999999999" class="text-white text-decoration-none d-block mt-2">
+              <i class="bi bi-whatsapp me-2"></i>Atendimento via WhatsApp
+            </a>
+
+            <!-- Horário -->
+            <p class="small mt-2">
+              <strong>Atendimento:</strong><br>
+              Seg a Sex: 10h - 18h<br>
+              Sáb e Dom: 14h - 22h
+            </p>
+
+            <!-- Endereço -->
+            <p class="small">
+              <strong>Endereço:</strong><br>
+              Av. das Estrelas, 1234<br>
+              São Paulo - SP
+            </p>
+          </div>
+
+          <!-- Links rápidos -->
+          <div class="col-md-4 mb-4">
+            <h6>Links rápidos</h6>
+            <ul class="list-unstyled small">
+              <li><a href="#" class="text-white text-decoration-none">Filmes</a></li>
+              <li><a href="#" class="text-white text-decoration-none">Sessões</a></li>
+              <li><a href="#" class="text-white text-decoration-none">Avaliações</a></li>
+              <li><a href="#" class="text-white text-decoration-none">Contato</a></li>
+            </ul>
+
+            <!-- Redes sociais -->
+            <h6 class="mt-4">Redes sociais</h6>
+            <div class="d-flex flex-column align-items-start">
+              <a href="#" class="text-white text-decoration-none mb-1">
+                <i class="bi bi-instagram me-2"></i>Instagram
+              </a>
+              <a href="#" class="text-white text-decoration-none mb-1">
+                <i class="bi bi-facebook me-2"></i>Facebook
+              </a>
+            </div>
+          </div>
+
+          <!-- Newsletter -->
+          <div class="col-md-4 mb-4">
+            <h6>Receba novidades</h6>
+            <form class="d-flex flex-column">
+              <input type="email" class="form-control mb-2 bg-dark text-white border-secondary" placeholder="Seu e-mail" />
+              <button class="btn btn-outline-light btn-sm" type="submit">Inscrever</button>
+            </form>
+          </div>
+        </div>
+
+        <hr class="bg-secondary" />
+
+        <p class="small text-center mb-0">&copy; 2025 FidelCine. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script><script src="js/script.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   </body>
 </html>
