@@ -46,6 +46,42 @@
             margin-top: 10px;
             color: #ccc;
         }
+
+        .card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        cursor: pointer;
+        }
+
+        .card:hover {
+        transform: scale(1.02);
+        box-shadow: 0 8px 20px rgba(220, 53, 69, 0.6);
+        z-index: 10;
+        }
+
+        .navbar-nav .nav-link {
+        transition: color 0.3s ease, transform 0.3s ease;
+        cursor: pointer;
+        }
+
+        .navbar-nav .nav-link:hover {
+        color: #dc3545; /* Cor vermelha */
+        transform: scale(1.1); /* Aumenta 10% */
+        }
+
+        .navbar-brand {
+        transition: all 0.3s ease;
+        background-color: #dc3545; /* vermelho padrão */
+        color: black;
+        padding: 0.25rem 1rem;
+        border-radius: 0.25rem;
+        font-weight: bold;
+        }
+
+        .navbar-brand:hover {
+        transform: scale(1.03);
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+        background-color: #c9303e; /* leve variação no vermelho */
+        }
     </style>
 </head>
 

@@ -46,8 +46,33 @@
             object-fit: cover;
         }
 
+        .navbar-nav .nav-link {
+        transition: color 0.3s ease, transform 0.3s ease;
+        cursor: pointer;
+        }
+
+        .navbar-nav .nav-link:hover {
+        color: #dc3545; /* Cor vermelha */
+        transform: scale(1.1); /* Aumenta 10% */
+        }
+
         textarea.form-control {
             resize: none;
+        }
+
+        .navbar-brand {
+        transition: all 0.3s ease;
+        background-color: #dc3545; /* vermelho padrão */
+        color: black;
+        padding: 0.25rem 1rem;
+        border-radius: 0.25rem;
+        font-weight: bold;
+        }
+
+        .navbar-brand:hover {
+        transform: scale(1.03);
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+        background-color: #c9303e; /* leve variação no vermelho */
         }
     </style>
 </head>
