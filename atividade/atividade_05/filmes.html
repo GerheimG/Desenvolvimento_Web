@@ -1,254 +1,265 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Filmes em Cartaz | FidelCine</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filmes em Cartaz | FidelCine</title>
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
 
-  <!-- Bootstrap & Icons -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
 
-  <!-- Estilos -->
-  <style>
-    body {
-      background-color: #000;
-      font-family: 'Roboto', sans-serif;
-      color: white;
-    }
 
-    h1 {
-      margin-top: 30px;
-      margin-bottom: 30px;
-    }
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
-    .card {
-      background-color: #111;
-      border: 1px solid #444;
-      color: white;
-    }
 
-    .card-title {
-      font-size: 1.2rem;
-      font-weight: bold;
-    }
+    <style>
+        body {
+            background-color: #000;
+            font-family: 'Roboto', sans-serif;
+            color: white;
+        }
 
-    .card-text {
-      font-size: 0.9rem;
-    }
+        h1 {
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
 
-    .info-extra {
-      font-size: 0.85rem;
-      margin-top: 10px;
-      color: #ccc;
-    }
-  </style>
+        .card {
+            background-color: #111;
+            border: 1px solid #444;
+            color: white;
+        }
+
+        .card-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .card-text {
+            font-size: 0.9rem;
+        }
+
+        .info-extra {
+            font-size: 0.85rem;
+            margin-top: 10px;
+            color: #ccc;
+        }
+    </style>
 </head>
+
 <body>
 
-  <nav class="navbar navbar-expand-sm navbar-dark bg-black">
-    <div class="container" style="width: 80%;">
-      <a class="navbar-brand bg-danger text-black px-3 py-1 rounded" href="index.html">FidelCine</a>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-black">
+        <div class="container-lg">
+            <a class="navbar-brand bg-danger text-black px-3 py-1 rounded" href="index.html">FidelCine</a>
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-target" aria-controls="menu-target" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-target"
+                aria-controls="menu-target" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-      <div class="collapse navbar-collapse justify-content-end" id="menu-target">
-        <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link" href="#">Filmes</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Sessões</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Avaliações</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
-        </ul>
-      </div>
+            <div class="collapse navbar-collapse justify-content-end" id="menu-target">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="#">Filmes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sessoes.html">Sessões</a></li>
+                    <li class="nav-item"><a class="nav-link" href="avaliacoes.html">Avaliações</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1 class="text-center">Filmes em Cartaz</h1>
+
+        <div class="row g-4">
+
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="img/card1.png" class="card-img-top" alt="Planeta dos Macacos" style="max-height: 68%;">
+                    <div class="card-body">
+                        <h5 class="card-title">Planeta dos Macacos</h5>
+                        <p class="card-text">Um experimento genético transforma macacos em seres altamente inteligentes.
+                            Agora, eles enfrentam os humanos numa batalha pela sobrevivência.</p>
+                        <p class="info-extra">Classificação: 14 anos<br>Estreia: 15/07/2025</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="img/card2.png" class="card-img-top" alt="Garfield">
+                    <div class="card-body">
+                        <h5 class="card-title">Garfield: Fora de Casa</h5>
+                        <p class="card-text">O gato mais preguiçoso do mundo se envolve em um assalto inusitado ao lado
+                            de seu pai e Odie. Diversão para toda a família.</p>
+                        <p class="info-extra">Classificação: Livre<br>Estreia: 12/07/2025</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="img/card3.png" class="card-img-top" alt="Kung Fu Panda 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Kung Fu Panda 4</h5>
+                        <p class="card-text">Po precisa treinar uma sucessora enquanto enfrenta uma nova vilã que ameaça
+                            o equilíbrio do Vale da Paz e dos reinos espirituais.</p>
+                        <p class="info-extra">Classificação: Livre<br>Estreia: 10/07/2025</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="img/card4.png" class="card-img-top" alt="Divertida Mente 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Divertida Mente 2</h5>
+                        <p class="card-text">Riley entra na adolescência e novas emoções chegam ao painel de controle.
+                            Uma jornada divertida e emocionante pelo crescimento.</p>
+                        <p class="info-extra">Classificação: 10 anos<br>Estreia: 20/07/2025</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="img/card5.png" class="card-img-top" alt="Deadpool 3" style="max-height: 65%;">
+                    <div class="card-body">
+                        <h5 class="card-title">Deadpool 3</h5>
+                        <p class="card-text">Deadpool retorna com muito humor ácido, ação e surpresas ao lado de
+                            Wolverine em um crossover inesperado do universo Marvel.</p>
+                        <p class="info-extra">Classificação: 18 anos<br>Estreia: 25/07/2025</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="img/card6.png" class="card-img-top" alt="Elementos" style="max-height: 65%;">
+                    <div class="card-body">
+                        <h5 class="card-title">Elementos</h5>
+                        <p class="card-text">Na cidade Elemental, fogo, água, terra e ar vivem juntos. Uma amizade
+                            improvável desafia todas as regras em uma animação emocionante.</p>
+                        <p class="info-extra">Classificação: Livre<br>Estreia: 14/07/2025</p>
+                    </div>
+                </div>
+            </div>
+
+ 
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="img/card7.png" class="card-img-top" alt="Missão: Impossível" style="max-height: 65%;">
+                    <div class="card-body">
+                        <h5 class="card-title">Missão: Impossível - Acerto Final</h5>
+                        <p class="card-text">Ethan Hunt enfrenta sua missão mais arriscada até agora em uma corrida
+                            contra o tempo para salvar o mundo.</p>
+                        <p class="info-extra">Classificação: 12 anos<br>Estreia: 18/07/2025</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="img/card8.png" class="card-img-top" alt="A Pequena Sereia" style="max-height: 65%;">
+                    <div class="card-body">
+                        <h5 class="card-title">A Pequena Sereia</h5>
+                        <p class="card-text">Ariel, uma jovem sereia curiosa, faz um acordo perigoso para viver entre os
+                            humanos. Um clássico da Disney em versão live-action.</p>
+                        <p class="info-extra">Classificação: Livre<br>Estreia: 22/07/2025</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="img/card9.png" class="card-img-top" alt="Oppenheimer" style="max-height: 65%;">
+                    <div class="card-body">
+                        <h5 class="card-title">Oppenheimer</h5>
+                        <p class="card-text">A história intensa e dramática do criador da bomba atômica. Um filme
+                            biográfico dirigido por Christopher Nolan.</p>
+                        <p class="info-extra">Classificação: 16 anos<br>Estreia: 19/07/2025</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </nav>
-
-  <div class="container">
-    <h1 class="text-center">Filmes em Cartaz</h1>
-
-    <div class="row g-4">
-      <!-- Filme 1 -->
-      <div class="col-md-4">
-        <div class="card h-100">
-          <img src="img/card1.png" class="card-img-top" alt="Planeta dos Macacos" style="max-height: 68%;">
-          <div class="card-body">
-            <h5 class="card-title">Planeta dos Macacos</h5>
-            <p class="card-text">Um experimento genético transforma macacos em seres altamente inteligentes. Agora, eles enfrentam os humanos numa batalha pela sobrevivência.</p>
-            <p class="info-extra">Classificação: 14 anos<br>Estreia: 15/07/2025</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Filme 2 -->
-      <div class="col-md-4">
-        <div class="card h-100">
-          <img src="img/card2.png" class="card-img-top" alt="Garfield">
-          <div class="card-body">
-            <h5 class="card-title">Garfield: Fora de Casa</h5>
-            <p class="card-text">O gato mais preguiçoso do mundo se envolve em um assalto inusitado ao lado de seu pai e Odie. Diversão para toda a família.</p>
-            <p class="info-extra">Classificação: Livre<br>Estreia: 12/07/2025</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Filme 3 -->
-      <div class="col-md-4">
-        <div class="card h-100">
-          <img src="img/card3.png" class="card-img-top" alt="Kung Fu Panda 4">
-          <div class="card-body">
-            <h5 class="card-title">Kung Fu Panda 4</h5>
-            <p class="card-text">Po precisa treinar uma sucessora enquanto enfrenta uma nova vilã que ameaça o equilíbrio do Vale da Paz e dos reinos espirituais.</p>
-            <p class="info-extra">Classificação: Livre<br>Estreia: 10/07/2025</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Filme 4 -->
-      <div class="col-md-4">
-        <div class="card h-100">
-          <img src="img/card4.png" class="card-img-top" alt="Divertida Mente 2">
-          <div class="card-body">
-            <h5 class="card-title">Divertida Mente 2</h5>
-            <p class="card-text">Riley entra na adolescência e novas emoções chegam ao painel de controle. Uma jornada divertida e emocionante pelo crescimento.</p>
-            <p class="info-extra">Classificação: 10 anos<br>Estreia: 20/07/2025</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Filme 5 -->
-      <div class="col-md-4">
-        <div class="card h-100">
-          <img src="img/card5.png" class="card-img-top" alt="Deadpool 3" style="max-height: 65%;">
-          <div class="card-body">
-            <h5 class="card-title">Deadpool 3</h5>
-            <p class="card-text">Deadpool retorna com muito humor ácido, ação e surpresas ao lado de Wolverine em um crossover inesperado do universo Marvel.</p>
-            <p class="info-extra">Classificação: 18 anos<br>Estreia: 25/07/2025</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Filme 6 -->
-      <div class="col-md-4">
-        <div class="card h-100">
-          <img src="img/card6.png" class="card-img-top" alt="Elementos" style="max-height: 65%;">
-          <div class="card-body">
-            <h5 class="card-title">Elementos</h5>
-            <p class="card-text">Na cidade Elemental, fogo, água, terra e ar vivem juntos. Uma amizade improvável desafia todas as regras em uma animação emocionante.</p>
-            <p class="info-extra">Classificação: Livre<br>Estreia: 14/07/2025</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Filme 7 -->
-      <div class="col-md-4">
-        <div class="card h-100">
-          <img src="img/card7.png" class="card-img-top" alt="Missão: Impossível" style="max-height: 65%;">
-          <div class="card-body">
-            <h5 class="card-title">Missão: Impossível - Acerto Final</h5>
-            <p class="card-text">Ethan Hunt enfrenta sua missão mais arriscada até agora em uma corrida contra o tempo para salvar o mundo.</p>
-            <p class="info-extra">Classificação: 12 anos<br>Estreia: 18/07/2025</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Filme 8 -->
-      <div class="col-md-4">
-        <div class="card h-100">
-          <img src="img/card8.png" class="card-img-top" alt="A Pequena Sereia" style="max-height: 65%;">
-          <div class="card-body">
-            <h5 class="card-title">A Pequena Sereia</h5>
-            <p class="card-text">Ariel, uma jovem sereia curiosa, faz um acordo perigoso para viver entre os humanos. Um clássico da Disney em versão live-action.</p>
-            <p class="info-extra">Classificação: Livre<br>Estreia: 22/07/2025</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Filme 9 -->
-      <div class="col-md-4">
-        <div class="card h-100">
-          <img src="img/card9.png" class="card-img-top" alt="Oppenheimer" style="max-height: 65%;">
-          <div class="card-body">
-            <h5 class="card-title">Oppenheimer</h5>
-            <p class="card-text">A história intensa e dramática do criador da bomba atômica. Um filme biográfico dirigido por Christopher Nolan.</p>
-            <p class="info-extra">Classificação: 16 anos<br>Estreia: 19/07/2025</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
     <footer class="bg-dark text-white py-5 mt-5">
-      <div class="container">
-        <div class="row text-center text-md-start">
-          <!-- Marca e descrição -->
-          <div class="col-md-4 mb-4">
-            <h5 class="text-danger">FidelCine</h5>
-            <p class="small">Sua central de cinema com os melhores lançamentos e experiências nas telonas.</p>
+        <div class="container">
+            <div class="row text-center text-md-start">
 
-            <!-- WhatsApp -->
-            <a href="https://wa.me/5511999999999" class="text-white text-decoration-none d-block mt-2">
-              <i class="bi bi-whatsapp me-2"></i>Atendimento via WhatsApp
-            </a>
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-danger">FidelCine</h5>
+                    <p class="small">Sua central de cinema com os melhores lançamentos e experiências nas telonas.</p>
 
-            <!-- Horário -->
-            <p class="small mt-2">
-              <strong>Atendimento:</strong><br>
-              Seg a Sex: 10h - 18h<br>
-              Sáb e Dom: 14h - 22h
-            </p>
 
-            <!-- Endereço -->
-            <p class="small">
-              <strong>Endereço:</strong><br>
-              Av. das Estrelas, 1234<br>
-              São Paulo - SP
-            </p>
-          </div>
+                    <a href="https://wa.me/5511999999999" class="text-white text-decoration-none d-block mt-2">
+                        <i class="bi bi-whatsapp me-2"></i>Atendimento via WhatsApp
+                    </a>
 
-          <!-- Links rápidos -->
-          <div class="col-md-4 mb-4">
-            <h6>Links rápidos</h6>
-            <ul class="list-unstyled small">
-              <li><a href="#" class="text-white text-decoration-none">Filmes</a></li>
-              <li><a href="#" class="text-white text-decoration-none">Sessões</a></li>
-              <li><a href="#" class="text-white text-decoration-none">Avaliações</a></li>
-              <li><a href="#" class="text-white text-decoration-none">Contato</a></li>
-            </ul>
 
-            <!-- Redes sociais -->
-            <h6 class="mt-4">Redes sociais</h6>
-            <div class="d-flex flex-column align-items-start">
-              <a href="#" class="text-white text-decoration-none mb-1">
-                <i class="bi bi-instagram me-2"></i>Instagram
-              </a>
-              <a href="#" class="text-white text-decoration-none mb-1">
-                <i class="bi bi-facebook me-2"></i>Facebook
-              </a>
+                    <p class="small mt-2">
+                        <strong>Atendimento:</strong><br>
+                        Seg a Sex: 10h - 18h<br>
+                        Sáb e Dom: 14h - 22h
+                    </p>
+
+                    <p class="small">
+                        <strong>Endereço:</strong><br>
+                        Av. das Estrelas, 1234<br>
+                        São Paulo - SP
+                    </p>
+                </div>
+
+
+                <div class="col-md-4 mb-4">
+                    <h6>Links rápidos</h6>
+                    <ul class="list-unstyled small">
+                        <li><a href="#" class="text-white text-decoration-none">Filmes</a></li>
+                        <li><a href="sessoes.html" class="text-white text-decoration-none">Sessões</a></li>
+                        <li><a href="avaliacoes.html" class="text-white text-decoration-none">Avaliações</a></li>
+                        <li><a href="contato.html" class="text-white text-decoration-none">Contato</a></li>
+                    </ul>
+
+                    <h6 class="mt-4">Redes sociais</h6>
+                    <div class="d-flex flex-column align-items-start">
+                        <a href="#" class="text-white text-decoration-none mb-1">
+                            <i class="bi bi-instagram me-2"></i>Instagram
+                        </a>
+                        <a href="#" class="text-white text-decoration-none mb-1">
+                            <i class="bi bi-facebook me-2"></i>Facebook
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4 mb-4">
+                    <h6>Receba novidades</h6>
+                    <form class="d-flex flex-column">
+                        <input type="email" class="form-control mb-2 bg-dark text-white border-secondary"
+                            placeholder="Seu e-mail" />
+                        <button class="btn btn-outline-light btn-sm" type="submit">Inscrever</button>
+                    </form>
+                </div>
             </div>
-          </div>
 
-          <!-- Newsletter -->
-          <div class="col-md-4 mb-4">
-            <h6>Receba novidades</h6>
-            <form class="d-flex flex-column">
-              <input type="email" class="form-control mb-2 bg-dark text-white border-secondary" placeholder="Seu e-mail" />
-              <button class="btn btn-outline-light btn-sm" type="submit">Inscrever</button>
-            </form>
-          </div>
+            <hr class="bg-secondary" />
+
+            <p class="small text-center mb-0">&copy; 2025 FidelCine. Todos os direitos reservados.</p>
         </div>
-
-        <hr class="bg-secondary" />
-
-        <p class="small text-center mb-0">&copy; 2025 FidelCine. Todos os direitos reservados.</p>
-      </div>
     </footer>
 
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
