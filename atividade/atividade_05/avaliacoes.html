@@ -7,74 +7,7 @@
     <title>Avaliações | FidelCine</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
-    <style>
-        body {
-            background-color: #000;
-            color: white;
-            font-family: 'Roboto', sans-serif;
-        }
-
-        .review-card {
-            background-color: #111;
-            border: 1px solid #444;
-            padding: 20px;
-            border-radius: 8px;
-            margin-bottom: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 20px;
-        }
-
-        .review-text {
-            flex-grow: 1;
-        }
-
-        .review-name {
-            font-weight: bold;
-            margin-bottom: 5px;
-        }
-
-        .star-rating {
-            color: gold;
-        }
-
-        .review-image {
-            width: 100px;
-            height: auto;
-            border-radius: 6px;
-            object-fit: cover;
-        }
-
-        .navbar-nav .nav-link {
-        transition: color 0.3s ease, transform 0.3s ease;
-        cursor: pointer;
-        }
-
-        .navbar-nav .nav-link:hover {
-        color: #dc3545; /* Cor vermelha */
-        transform: scale(1.1); /* Aumenta 10% */
-        }
-
-        textarea.form-control {
-            resize: none;
-        }
-
-        .navbar-brand {
-        transition: all 0.3s ease;
-        background-color: #dc3545; /* vermelho padrão */
-        color: black;
-        padding: 0.25rem 1rem;
-        border-radius: 0.25rem;
-        font-weight: bold;
-        }
-
-        .navbar-brand:hover {
-        transform: scale(1.03);
-        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
-        background-color: #c9303e; /* leve variação no vermelho */
-        }
-    </style>
+    <link rel="stylesheet" href="css/estilo.css">
 </head>
 
 <body>
@@ -92,6 +25,7 @@
                     <li class="nav-item"><a class="nav-link" href="sessoes.html">Sessões</a></li>
                     <li class="nav-item"><a class="nav-link active" href="avaliacoes.html">Avaliações</a></li>
                     <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                    <li class="nav-item"><a class="nav-link" href="termos.html">Termos</a></li>
                 </ul>
             </div>
         </div>
@@ -148,12 +82,12 @@
             <form>
                 <div class="mb-3">
                     <label for="nome" class="form-label">Seu nome</label>
-                    <input type="text" class="form-control bg-dark text-white border-secondary" id="nome" required />
+                    <input type="text" class="form-control bg-dark text-white border-secondary" placeholder="Seu nome" id="nome" required />
                 </div>
 
                 <div class="mb-3">
                     <label for="filme" class="form-label">Filme assistido</label>
-                    <input type="text" class="form-control bg-dark text-white border-secondary" id="filme" required />
+                    <input type="text" class="form-control bg-dark text-white border-secondary" placeholder="Nome do Filme" id="filme" required />
                 </div>
 
                 <div class="mb-3">
@@ -170,7 +104,7 @@
 
                 <div class="mb-3">
                     <label for="comentario" class="form-label">Comentário</label>
-                    <textarea class="form-control bg-dark text-white border-secondary" id="comentario" rows="4"
+                    <textarea class="form-control bg-dark text-white border-secondary" placeholder="Sua opinião sobre o filme..." id="comentario" rows="4"
                         required></textarea>
                 </div>
 
@@ -179,7 +113,7 @@
         </div>
     </div>
 
- 
+
     <footer class="bg-dark text-white py-5 mt-5">
         <div class="container">
             <div class="row text-center text-md-start">
@@ -202,6 +136,7 @@
                         <li><a href="sessoes.html" class="text-white text-decoration-none">Sessões</a></li>
                         <li><a href="avaliacoes.html" class="text-white text-decoration-none">Avaliações</a></li>
                         <li><a href="contato.html" class="text-white text-decoration-none">Contato</a></li>
+                        <li><a href="termos.html" class="text-white text-decoration-none">Termos e Privacidade</a></li>
                     </ul>
                     <h6 class="mt-4">Redes sociais</h6>
                     <a href="#" class="text-white text-decoration-none mb-1"><i
@@ -220,7 +155,14 @@
                 </div>
             </div>
             <hr class="bg-secondary" />
-            <p class="small text-center mb-0">&copy; 2025 FidelCine. Todos os direitos reservados.</p>
+            <p class="text-center text-white-50 mb-0 fs-6" style="line-height: 1.6; max-width: 900px; margin: 0 auto;">
+            &copy; 2025 FidelCine. Todos os direitos reservados.<br />
+            Este site e seu conteúdo são protegidos por leis de direitos autorais e propriedade intelectual. 
+            A reprodução, distribuição ou uso não autorizado de qualquer parte deste site é estritamente proibida. 
+            A FidelCine não se responsabiliza por eventuais danos decorrentes do uso das informações aqui disponibilizadas. 
+            Ao utilizar este site, você concorda com nossos <a href="termos.html" class="text-danger text-decoration-underline">Termos de Uso</a> e 
+            <a href="privacidade.html" class="text-danger text-decoration-underline">Política de Privacidade</a>.
+            </p>
         </div>
     </footer>
 
