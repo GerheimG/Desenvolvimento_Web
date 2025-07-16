@@ -4,4 +4,4 @@ let altura = Number(prompt('Insira a altura do triângulo: '));
 
 let area = (base * altura) / 2;
 
-console.log('A área deste retângulo é:', area);
+console.log('A área deste triângulo é:', area);
