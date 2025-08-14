@@ -1,0 +1,46 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+    color: #333;
+}
+
+h1 {
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+input#caracter {
+    width: 250px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+
+button#btnVerificar {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button#btnVerificar:hover {
+    background-color: #0056b3;
+}
+
+p#mensagem {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
