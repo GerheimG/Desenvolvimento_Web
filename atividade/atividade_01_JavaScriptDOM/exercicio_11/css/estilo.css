@@ -1,0 +1,28 @@
+body {
+    background-color: #f8f9fa; /* Fundo claro */
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #343a40; /* Cinza escuro */
+}
+
+hr {
+    margin-bottom: 20px;
+}
+
+#numero {
+    max-width: 300px;
+    margin-bottom: 10px;
+}
+
+#btnTabuada {
+    margin-bottom: 15px;
+}
+
+#resultado li {
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+}

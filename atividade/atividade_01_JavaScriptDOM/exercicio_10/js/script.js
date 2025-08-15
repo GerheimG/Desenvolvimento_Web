@@ -1,17 +1,22 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
+            const senha = document.getElementById('senha');
+            const aviso = document.getElementById('mensagem');
+            const btnTeste = document.getElementById('btnTeste');
 
-    const senha = document.getElementById('senha');
+            btnTeste.addEventListener('click', function () {
+                const texto = senha.value;
 
-    const aviso = document.getElementById('mensagem');
+                const temMaiuscula = /[A-Z]/.test(texto);
+                const temMinuscula = /[a-z]/.test(texto);
+                const temNumero = /[0-9]/.test(texto);
+                const tamanhoOk = texto.length >= 8;
 
-    const btnTeste = document.getElementById('btnEnviar');
-
-    btnTeste.addEventListener('click', function() {
-
-        const texto = senha.value
-
-        if (texto.lenght > 1){
-            aviso.textContent = 'Senha fraca'
-        }
-    })
-})
+                if (temMaiuscula && temMinuscula && temNumero && tamanhoOk) {
+                    aviso.textContent = "Senha forte";
+                    aviso.style.color = "green";
+                } else {
+                    aviso.textContent = "Senha fraca(use maiúsculas, minúsculas, números e pelo menos 8 caracteres)";
+                    aviso.style.color = "red";
+                }
+            });
+        });
