@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 05</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+    <!--Cabeçalho do Site-->
+    <header>
+        <h1>Gestão de Alunos</h1>
+    </header>
+
+    <!--Container para o conteúdo-->
+    <main>
+        <h2>Cadastro de Aluno</h2>
+
+        <div class="container">
+            <label for="nomeAluno">Nome:</label>
+            <input type="text" id="nomeAluno" placeholder="João Cleber">
+
+            <label for="freqAluno">Frequência(%):</label>
+            <input type="number" id="freqAluno" placeholder="Ex: 50">
+
+            <label for="notaAluno">Notas (4 bimestres, separados por vírgula):</label>
+            <input type="text" id="notasAluno" placeholder="10, 10, 10, 10">
+
+            <button id="adicionarAluno">Adicionar Aluno</button>
+        </div>
+
+        <h2>Lista de Alunos</h2>
+        <table border="1" cellspacing="0" cellpadding="5">
+            <thead>
+                <tr>
+                <th>Nome</th>
+                <th>Frequência</th>
+                <th>Média</th>
+                <th>Menção</th>
+                <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="listaAlunos">
+                <tr class="modelo">
+                <td class="nome"></td>
+                <td class="frequencia"></td>
+                <td class="media"></td>
+                <td class="mensao"></td>
+                <td class="acoes"><button  id="btnRemover">Remover</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <!--Rodapé da página-->
+    <footer>
+        <p>&copy;2025 Escola Exemplo</p>
+    </footer>
+
+    <!--Javascript-->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
