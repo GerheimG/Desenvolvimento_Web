@@ -33,11 +33,11 @@ document.addEventListener("DOMContentLoaded", function () {
         // Criar a nova linha manualmente
         const novaLinha = document.createElement("tr");
 
-        // Célula: Nome
+        // Nome
         const tdNome = document.createElement("td");
         tdNome.textContent = nome;
 
-        // Célula: Frequência
+        //Frequência
         const tdFrequencia = document.createElement("td");
         tdFrequencia.textContent = `${frequencia}%`;
 
@@ -45,16 +45,16 @@ document.addEventListener("DOMContentLoaded", function () {
         const tdMedia = document.createElement("td");
         tdMedia.textContent = media.toFixed(1); // Uma casa decimal
 
-        // Célula: Menção
+        // Menção
         const tdMensao = document.createElement("td");
         tdMensao.textContent = mensao;
 
-        // Célula: Ações (botão de remover)
+        // Ações (botão de remover)
         const tdAcoes = document.createElement("td");
         const btnRemover = document.createElement("button");
         btnRemover.textContent = "Remover";
 
-        // Ação do botão: remove a linha correspondente
+        // Ação do botão: remove a linha
         btnRemover.addEventListener("click", function () {
             novaLinha.remove();
         });
