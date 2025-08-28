@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // botão de remover
         const tdAcoes = document.createElement("td");
         const btnRemover = document.createElement("button");
-        btnRemover.textContent = "Remover";n 
+        btnRemover.textContent = "Remover";
 
         // Ação do botão: remove a linha
         btnRemover.addEventListener("click", function () {
