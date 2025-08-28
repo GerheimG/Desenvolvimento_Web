@@ -15,6 +15,16 @@ document.addEventListener("DOMContentLoaded", function () {
             return;
         }
 
+        if (frequencia > 100 || frequencia < 0) {
+            alert('Insira uma frequência válida (0 - 100)');
+            return;
+        }
+
+        if (nome == Number(nome)) {
+            alert('Insira um nome válido');
+            return;
+        }
+
         // Converte as notas para um array de números
         const notas = notasTexto.split(",").map(nota => parseFloat(nota.trim()));
 
@@ -41,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const tdFrequencia = document.createElement("td");
         tdFrequencia.textContent = `${frequencia}%`;
 
-        // Célula: Média
+        // Média
         const tdMedia = document.createElement("td");
         tdMedia.textContent = media.toFixed(1); // Uma casa decimal
 
@@ -49,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const tdMensao = document.createElement("td");
         tdMensao.textContent = mensao;
 
-        // Ações (botão de remover)
+        // botão de remover
         const tdAcoes = document.createElement("td");
         const btnRemover = document.createElement("button");
         btnRemover.textContent = "Remover";
@@ -79,7 +89,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Função para calcular média
     function calcularMedia(notas) {
-        const soma = notas.reduce((acc, nota) => acc + nota, 0);
+        const soma = notas.reduce((i, nota) => i + nota, 0);
         return soma / notas.length;
     }
 
